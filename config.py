@@ -40,7 +40,7 @@ START_PIC = os.environ.get("START_PIC", "https://i.postimg.cc/DyRZsgn2/IMG-20250
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.postimg.cc/pTVXxcYB/IMG-20250723-115957-521.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkshortify.com")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 43200)) # Add time in seconds
 TUT_VID = os.environ.get("TUT_VID","https://t.me/HowToVerifyInBot")
