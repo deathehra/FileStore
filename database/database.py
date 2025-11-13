@@ -18,6 +18,7 @@ default_verify = {
     'is_verified': False,
     'verified_time': 0,
     'verify_token': "",
+    'original_start': "",
     'link': ""
 }
 
@@ -232,6 +233,7 @@ class Rohit:
         current['verify_token'] = verify_token
         current['is_verified'] = is_verified
         current['verified_time'] = verified_time
+        current['original_start'] = original_start
         current['link'] = link
         await self.db_update_verify_status(user_id, current)
 
