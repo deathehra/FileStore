@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
             # Add "Get File" button below verification message
             btn = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("📁 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘 📥", url=f"https://t.me/{client.username}?start={token}")]
+                    [InlineKeyboardButton("📁 𝗚𝗘𝗧 𝗙𝗜𝗟𝗘 📥", url=f"https://t.me/{client.username}?start={message.command[1]}")]
                 ]
             )
             return await message.reply(
@@ -292,7 +292,7 @@ async def not_joined(client: Client, message: Message):
         try:
             buttons.append([
                 InlineKeyboardButton(
-                    text='♻️ Tʀʏ Aɢᴀɪ',
+                    text='♻️ Tʀʏ Aɢᴀɪn',
                     url=f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ])
